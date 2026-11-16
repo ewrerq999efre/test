@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang TC', 'Microsoft JhengHei', 'Heiti TC', Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Enforce 0px brutalist sharp slider */
+.cf-scrubber {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 0px !important;
+}
+.cf-scrubber::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0px !important;
+}
+.cf-scrubber::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  margin-top: -6px;
+  border-radius: 0px !important;
+  transition: background-color 0.15s ease;
+}
+.cf-scrubber::-webkit-slider-thumb:hover {
+  background: #1DB954;
+}
+.cf-scrubber::-moz-range-track {
+  height: 6px;
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0px !important;
+}
+.cf-scrubber::-moz-range-thumb {
+  width: 28px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1DB954;
+}
